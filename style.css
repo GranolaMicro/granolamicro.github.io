@@ -1,0 +1,28 @@
+body {
+	font-family: "Share Tech Mono";
+	font-size: 16px;
+	background-color: black;
+	color: white;
+}
+/* Making link boxes */
+a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	padding: 8px 8px;
+	border: 2px solid white;
+	display: block;
+}
+a:hover:not(#desc) {
+	background-color: black;
+	color: white;
+	border: 2px solid red;
+}
+a#desc {
+	background-color: black;
+	color: white;
+	border: 2px solid orange;
+}
+div {
+	padding: 25px;
+}
