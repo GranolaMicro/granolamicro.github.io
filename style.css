@@ -1,10 +1,12 @@
 body {
-	font-family: "Share Tech Mono";
+	/* Use the imported font Share Tech Mono
+	If browser can't render, use sans-serif */
+	font-family: "Share Tech Mono", sans-serif;
 	font-size: 16px;
 	background-color: black;
 	color: white;
 }
-/* Making link boxes */
+/* Make links boxes */
 a {
 	text-decoration: none;
 	color: black;
@@ -13,16 +15,42 @@ a {
 	border: 2px solid white;
 	display: block;
 }
+/* Make link boxes change color when hovering over them
+This doesn't affect link boxes with an ID of #desc */
 a:hover:not(#desc) {
 	background-color: black;
 	color: white;
 	border: 2px solid red;
 }
+/* This makes generally non-link boxes that are still a part of the link box flow */
 a#desc {
 	background-color: black;
 	color: white;
 	border: 2px solid orange;
 }
+/* Make the content not touch the edge */
 div {
 	padding: 25px;
+}
+/* Make an inverted div tag
+This will start the inverted section
+It will keep the padding up above */
+div#invert {
+	background-color: white;
+	color: black;
+}
+a#invert {
+	color: white;
+	background-color: black;
+	border: 2px solid black;
+}
+a#invert:hover:not(.desc) {
+	background-color: white;
+	color: black;
+	border: 2px solid red;
+}
+a#invert.desc {
+	background-color: white;
+	color: black;
+	border: 2px solid orange;
 }
