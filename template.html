@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Define a description that appears in embeds and search -->
+		<meta name="description" content="Site Tagline" >
+		<meta charset="UTF-8" />
+		<!-- Define a title that appears in embeds, search, and the site tab -->
+		<title>grano.la: Template</title>
+		<!-- Import the Google font Share Tech Mono -->
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' />
+		<!-- Import the stylesheet -->
+		<link rel="stylesheet" href='style.css' />
+	</head>
+	<body>
+		<!-- Everything must be contained within the master div! -->
+		<div>
+			<h1>grano.la: Template</h1>
+			<p>Master Template.</p>
+			<p style="color:red;font-weight:bold;">This is important info!</p>
+			<p style="color:orange;font-weight:bold;">This is a key detail.</p>
+			<a href="https://granolamicro.github.io" >This is a link</a>
+			<a href="https://granolamicro.neocities.org" id='desc' >This is a description link. It still works as a link.</a>
+			<a>
+				<img src="https://pbs.twimg.com/media/EmoWFhKWMAAqlDz?format=jpg&name=large" alt="some friends i drew" title="some friends i drew" border="0" width="128px" />
+				<br/>Images must have a width tag of 128px and a border tag of 0, as well as an alt tag describing the image. If transparent, they must also have a style tag that shows a background color (default white) Additionally they can have a title tag.</a>
+			<a id="desc" title="Link TItle" >This link has a title tag. Use title tags to describe things in further detail, like usernames for a social media link.</a>
+		</div>
+		<p>If a tag is outside the master div, it goes to the edge and that looks yucky >P</p>
+		<a>Especially when it's a link!</a><br/>
+		<div id="invert" >
+			<p>If for some reason we want to make another div, we can!<br/>
+				This will allow us to style it using IDs and classes in the stylesheet, or the style tag in the div itself.</p>
+			<a>Here is an example of a link in disguise!</a><br/>
+			<a id="invert" >Here is an example of a specialized link!</a><br/>
+			<a id="invert" class="desc" >Here is an example of a specialized description link!</a>
+			<p>For description links, we have to use classes, since a tag can't have multiple IDs.</p>
+			<h1>This could also be used as a form of light mode using JS.</h1>
+		</div>
+	</body>
+</html>
